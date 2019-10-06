@@ -1,0 +1,43 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="allPages">
+        <div id="header">
+            <img id="header-banner" alt="header-banner" src="../../wwwroot/images/headerbanner.jpg" width="287">
+            <h3 id="title">Cook By Yourself</h3>
+            <nav>
+                <a asp-action="Home">Home</a>|
+                <a asp-action="DisplayPage">DisplayPage</a>|
+                <a asp-action="InsertPage">InsertPage</a>|
+                <a asp-action="DataPage">DataPage</a>|
+                <a asp-action="UserPage">UserPage</a>
+            </nav>
+        </div>
+        
+        <div id="content">
+            @RenderBody()
+        </div>
+
+        <div id="footer">
+            <nav>
+                <a asp-action="Home">Home</a>|
+                <a asp-action="DisplayPage">DisplayPage</a>|
+                <a asp-action="InsertPage">InsertPage</a>|
+                <a asp-action="DataPage">DataPage</a>|
+                <a asp-action="UserPage">UserPage</a>
+            </nav>
+            <br><br>
+            <p id="copyright">&copy;&nbsp;Copyright Jaehan Bae - Comp 229 – Web Application Development</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
